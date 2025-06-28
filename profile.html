@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Profile</title>
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/profile.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <script src="./js/script.js"></script>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="header-left">
+        <div style="display: flex; align-items: center; gap: 16px">
+          <div class="logo logo-text">SCALE</div>
+          <div class="logo-separator"></div>
+          <div class="logo">
+            <img src="./assets/images/sdgsaf.webp" alt="SDG Logo" />
+          </div>
+        </div>
+        <div class="mobile-menu-button" onclick="toggleMobileMenu()">☰</div>
+      </div>
+
+      <nav class="nav-links">
+        <a href="/">Home</a>
+        <a href="#">Volunteer</a>
+        <a href="/table.html">Climate Data</a>
+        <a href="#">Government</a>
+        <a href="#">Customers</a>
+        <a href="#">Resources</a>
+      </nav>
+
+      <div class="header-right">
+        <a href="#" class="profile-button">Profile →</a>
+      </div>
+
+      <div class="mobile-nav" id="mobileNav">
+        <a href="/">Home</a>
+        <a href="#">Volunteer</a>
+        <a href="/table.html">Climate Data</a>
+        <a href="#">Government</a>
+        <a href="#">Customers</a>
+        <a href="#">Resources</a>
+        <a href="#" class="profile-button">Profile →</a>
+      </div>
+    </header>
+    <main>
+      <div class="profile-layout">
+        <section>
+          <div class="avatar-wrapper">
+            <img
+              src="./assets/images/profile images.png"
+              alt="User Avatar"
+              class="avatar"
+            />
+          </div>
+          <div class="user-info">
+            <h2>Dr. Aiden Thomas</h2>
+            <p class="role">Environmental Policy Advisor</p>
+            <p>Age: 38 years</p>
+            <p>Location: Melbourne, Australia</p>
+            <p>
+              Work: Collaborates with environmental think tanks, government
+              bodies, and non-profits to shape legislation on renewable energy,
+              carbon emissions reduction, and sustainable agriculture practices.
+              Regularly speaks at global climate forums and advises on
+              international agreements.
+            </p>
+            <p>
+              Education: Ph.D. in Environmental Policy, MPhil in Sustainable
+              Development
+            </p>
+          </div>
+        </section>
+
+        <section class="user-intro">
+          <h1>Introduction</h1>
+          <p>
+            Hello, I'm Dr. Aiden Thomas. My work lies at the intersection of
+            science, policy, and advocacy. I am passionate about driving policy
+            changes that empower communities to lead sustainable lives, and I
+            firmly believe that impactful climate action begins with informed
+            governance and strong collaboration.
+          </p>
+        </section>
+
+        <section class="skills">
+          <div class="category">
+            <h1>Skills</h1>
+            <ul>
+              <li>Policy Development</li>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 85%">85%</div>
+              </div>
+              <li>Climate Change Advocacy</li>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 90%">90%</div>
+              </div>
+              <li>Stakeholder Engagement</li>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 75%">75%</div>
+              </div>
+              <li>Data Interpretation (GIS & Remote Sensing)</li>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 70%">70%</div>
+              </div>
+              <li>Report Writing & Communication</li>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 80%">80%</div>
+              </div>
+            </ul>
+          </div>
+        </section>
+
+        <section class="goals">
+          <div class="category">
+            <h1>Goals</h1>
+            <ul>
+              <li>
+                Push for net-zero emissions legislation in 3 Australian states
+              </li>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 50%">50%</div>
+              </div>
+              <li>Launch a regional climate data platform for policymakers</li>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 65%">65%</div>
+              </div>
+              <li>Train 100 youth ambassadors for local climate leadership</li>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 75%">75%</div>
+              </div>
+            </ul>
+          </div>
+        </section>
+
+        <section class="frustrations">
+          <h1>Frustrations</h1>
+          <ul>
+            <li>Inconsistent climate policies across regions</li>
+            <li>Delays in funding approvals for green initiatives</li>
+            <li>Public misinformation on environmental science</li>
+            <li>
+              Underrepresentation of indigenous knowledge in climate planning
+            </li>
+          </ul>
+        </section>
+
+        <section class="experience">
+          <h1>Experience</h1>
+          <ul>
+            <li>
+              Global Climate Alliance, Sydney, Australia <br />
+              January 2020 – Present
+              <ul>
+                <li>
+                  Spearheaded legislative reviews that resulted in stronger
+                  renewable energy targets for regional councils.
+                </li>
+                <li>
+                  Advised UNDP teams on adaptation policy frameworks for Pacific
+                  nations.
+                </li>
+                <li>
+                  Facilitated stakeholder meetings with local leaders,
+                  researchers, and policymakers to co-design climate adaptation
+                  plans.
+                </li>
+                <li>
+                  Published policy briefs and research articles in top
+                  environmental journals.
+                </li>
+                <li>
+                  Represented Australia at COP27 in Egypt, contributing to
+                  policy drafting on climate financing and loss & damage.
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+
+        <section class="interests-card">
+          <h1>Interests</h1>
+          <div class="interests-images">
+            <img src="./assets/images/plant.png" alt="Plant icon" />
+            <p>Urban Gardening</p>
+            <img src="./assets/images/recycle.png" alt="Recycle icon" />
+            <p>Recycling Projects</p>
+            <img src="./assets/images/water.png" alt="Water drop icon" />
+            <p>Rainwater Harvesting</p>
+            <img src="./assets/images/bicycle.png" alt="Bicycle icon" />
+            <p>Eco-Friendly Transport</p>
+          </div>
+        </section>
+
+        <section class="volunteer-card">
+          <h1>Volunteering Availability</h1>
+          <table>
+            <thead>
+              <tr>
+                <th>Day</th>
+                <th>Availability Schedule</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Monday</td>
+                <td>10:00 AM – 1:00 PM (School Climate Talks)</td>
+              </tr>
+              <tr>
+                <td>Tuesday</td>
+                <td>2:00 PM – 4:00 PM (Community Policy Workshops)</td>
+              </tr>
+              <tr>
+                <td>Friday</td>
+                <td>9:00 AM – 12:00 PM (NGO Collaboration)</td>
+              </tr>
+              <tr>
+                <td>Saturday</td>
+                <td>All Day (Tree Planting / Awareness Marches)</td>
+              </tr>
+              <tr>
+                <td>Sunday</td>
+                <td>Unavailable</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section class="contact">
+          <h1>Contact Me</h1>
+          <form action="#" method="post">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName"
+                  >First Name <span class="asterisk">*</span></label
+                >
+                <input
+                  type="text"
+                  id="firstName"
+                  name="firstName"
+                  placeholder="Enter your first name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="lastName"
+                  >Last Name <span class="asterisk">*</span></label
+                >
+                <input
+                  type="text"
+                  id="lastName"
+                  name="lastName"
+                  placeholder="Enter your last name"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email <span class="asterisk">*</span></label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Enter your email address"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="tel"
+                  >Phone Number <span class="asterisk">*</span></label
+                >
+                <input
+                  type="tel"
+                  id="tel"
+                  name="tel"
+                  placeholder="Enter your phone number"
+                  required
+                />
+              </div>
+            </div>
+
+            <label for="reason">Reason <span class="asterisk">*</span></label>
+            <select id="reason" name="reason" required>
+              <option value="" disabled selected>Select a reason</option>
+              <option value="climate-action">
+                Interested in climate action
+              </option>
+              <option value="sustainability">
+                Inquiring about sustainability initiatives
+              </option>
+              <option value="environmental-education">
+                Seeking environmental education resources
+              </option>
+              <option value="partnership">
+                Interested in collaboration or partnership
+              </option>
+              <option value="volunteering">
+                Interested in volunteering opportunities
+              </option>
+              <option value="general-inquiry">General inquiry</option>
+            </select>
+
+            <label for="message"
+              >Message / Inquiry <span class="asterisk">*</span></label
+            >
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Write your message here..."
+              required
+            ></textarea>
+
+            <div class="form-buttons">
+              <button
+                href=""
+                type="submit"
+                class="main-button"
+                style="background-color: #559158"
+              >
+                send
+              </button>
+              <button
+                type="rest"
+                class="main-button"
+                style="background-color: #6c757d"
+              >
+                reset
+              </button>
+            </div>
+          </form>
+        </section>
+      </div>
+    </main>
+
+    <button
+      class="scroll-to-top"
+      onclick="scrollToTop()"
+      aria-label="Scroll to Top"
+    >
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <footer class="footer">
+      <div class="footer-grid">
+        <div class="footer-column">
+          <h4>Website Links</h4>
+          <a href="#">Home</a>
+          <a href="#">Shop</a>
+          <a href="#">Gallery</a>
+          <a href="#">Feedback</a>
+          <a href="#">Team</a>
+          <a href="#">Sitemap</a>
+        </div>
+
+        <div class="footer-column">
+          <h4>Useful Links</h4>
+          <a href="#">Conditions</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Cookies</a>
+          <a href="#">Anti Corruption</a>
+          <a href="#">Asset License</a>
+        </div>
+
+        <div class="footer-column">
+          <h4>Content Pages</h4>
+          <a href="#">Content 01</a>
+          <a href="#">Content 02</a>
+          <a href="#">Content 03</a>
+          <a href="#">Content 04</a>
+        </div>
+
+        <div class="footer-column">
+          <h4>Student Pages</h4>
+          <a href="#">Student 01</a>
+          <a href="#">Student 02</a>
+          <a href="#">Student 03</a>
+          <a href="#">Student 04</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>Copyright © 2025 SCALE. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      function toggleMobileMenu() {
+        document.getElementById("header").classList.toggle("show-mobile-nav");
+      }
+
+      function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+    </script>
+  </body>
+</html>

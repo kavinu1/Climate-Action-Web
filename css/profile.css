@@ -1,0 +1,289 @@
+body {
+  background-color: #f5f7fa;
+}
+
+h1,
+h2 {
+  color: #2f7e4c;
+  margin-bottom: 1rem;
+}
+
+.profile-layout {
+  column-count: 2;
+  column-gap: 3.5rem;
+  margin: 2rem 5rem;
+}
+
+section {
+  max-width: 600px;
+  margin: 0 auto 3rem auto;
+  padding: 2rem 4rem 1rem;
+  background-color: white;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: box-shadow 0.5s ease;
+  overflow: hidden;
+}
+
+section:hover {
+  overflow: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #8b8b8b transparent;
+  box-shadow: 0 6px 24px rgba(95, 148, 106, 0.651);
+}
+
+.user-info {
+  height: 410px;
+}
+
+.user-intro {
+  height: 270px;
+}
+
+.skills {
+  height: 410px;
+}
+
+.goals {
+  height: 435px;
+}
+
+.frustrations {
+  height: 300px;
+}
+
+.experience {
+  height: 585px;
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid #81c784;
+  object-fit: cover;
+}
+
+.avatar-wrapper {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.user-info h2 {
+  text-align: center;
+}
+
+.role {
+  font-size: 1.2rem;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.user-info p {
+  text-align: justify;
+}
+
+li {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: #555;
+  text-align: justify;
+}
+
+.category {
+  margin-bottom: 2rem;
+}
+
+.progress-bar {
+  background-color: #6263623b;
+  height: 1.1rem;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.progress-fill {
+  background-color: #a7ee6c;
+  color: black;
+  height: 100%;
+  padding-left: 8px;
+  font-size: 14px;
+}
+
+.interests-card,
+.volunteer-card,
+.contact {
+  max-width: 1270px;
+  column-span: all;
+}
+
+.interests-images {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.interests-images img {
+  height: 4rem;
+  padding-left: 2rem;
+}
+
+.volunteer-card table {
+  width: 100%;
+  background-color: #e8f5e9;
+  color: #2e2e2e;
+  border-collapse: collapse;
+}
+
+.volunteer-card th,
+.volunteer-card td {
+  border: 2px solid #c8e6c9;
+}
+
+.volunteer-card th {
+  background-color: #83bb85;
+  color: #1b5e20;
+  padding: 1rem;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.volunteer-card td {
+  padding: 0.8rem;
+  text-align: left;
+}
+
+.volunteer-card tr {
+  background-color: #12a33650;
+}
+
+.volunteer-card tr:hover {
+  background-color: #e6f4ea;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  padding: 0 2rem 1rem 2rem;
+  gap: 1rem;
+}
+
+label {
+  color: #5e5656;
+  margin-top: 0.75rem;
+}
+
+.contact input,
+.contact textarea,
+.contact select {
+  background-color: #f5f7f4;
+  color: #2e2e2e;
+  border: 1px solid #c8d6c1;
+  padding: 10px;
+  border-radius: 6px;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.contact input::placeholder,
+.contact textarea::placeholder,
+.contacts select {
+  color: #9ca3af;
+}
+
+.contact input:focus,
+.contact textarea:focus,
+.contact select:focus {
+  border-color: #4caf50;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.2);
+}
+
+.asterisk {
+  color: #b92922;
+}
+
+.form-row {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.form-group {
+  flex: 1;
+  min-width: 250px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+@media (max-width: 1200px) {
+  .profile-layout {
+    margin: 5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .profile-layout {
+    column-count: 1;
+    margin: 5rem;
+  }
+
+  .volunteer-card table {
+    padding: 1rem;
+  }
+
+  .contact form {
+    padding: 0;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .profile-layout {
+    margin: 1.5rem;
+  }
+
+  .volunteer-card table {
+    padding: 0;
+  }
+
+  section {
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .volunteer-card th,
+  .volunteer-card td {
+    padding: 6px 5px 3px 5px;
+  }
+
+  .interests-images {
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .interests-images img {
+    height: 3rem;
+    padding-left: 0;
+  }
+}
