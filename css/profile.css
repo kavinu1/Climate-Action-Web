@@ -130,38 +130,63 @@ li {
   padding-left: 2rem;
 }
 
-.volunteer-card table {
-  width: 100%;
-  background-color: #e8f5e9;
-  color: #2e2e2e;
+.volunteer-table {
+  margin: 2rem auto;
+  overflow-x: auto;
+  width: fit-content;
+  border-radius: 16px;
+}
+
+.volunteer-table table {
   border-collapse: collapse;
+  min-width: 750px;
 }
 
-.volunteer-card th,
-.volunteer-card td {
-  border: 2px solid #c8e6c9;
-}
-
-.volunteer-card th {
-  background-color: #83bb85;
-  color: #1b5e20;
+.volunteer-table th {
+  background: rgba(209, 240, 220, 0.6);
   padding: 1rem;
   font-size: 18px;
   font-weight: 500;
   text-align: center;
+  border: 1px solid #e3e3e3;
 }
 
-.volunteer-card td {
+.volunteer-table td {
   padding: 0.8rem;
   text-align: left;
+  border: 1px solid #e3e3e3;
 }
 
-.volunteer-card tr {
-  background-color: #12a33650;
+.volunteer-table tr:nth-child(odd) {
+  background-color: #ebfcee;
 }
 
-.volunteer-card tr:hover {
+.volunteer-table tr:nth-child(even) {
+  background-color: rgba(240, 253, 245, 0.8);
+}
+
+.volunteer-table td:hover {
   background-color: #e6f4ea;
+}
+
+.volunteer-table td:first-child,
+.volunteer-table th:first-child {
+  background: rgba(245, 255, 249, 0.8);
+  border-right: 2px solid #b8e4c7;
+  color: #1e3932;
+}
+
+.volunteer-table thead {
+  border-bottom: 2px solid #b8e4c7;
+}
+
+.volunteer-table .table-bottom td {
+  background: rgba(245, 255, 249, 0.8);
+  border: 1px solid #e3e3e3;
+}
+
+.volunteer-table .logo-text {
+  color: rgb(117, 208, 126);
 }
 
 .contact form {
@@ -236,10 +261,8 @@ label {
   gap: 1rem;
 }
 
-@media (max-width: 1200px) {
-  .profile-layout {
-    margin: 5rem;
-  }
+.form-buttons .main-button:hover {
+  color: #555;
 }
 
 @media (max-width: 768px) {
@@ -248,8 +271,26 @@ label {
     margin: 5rem;
   }
 
-  .volunteer-card table {
+  .volunteer-table {
+    margin: 1rem auto;
+  }
+
+  .volunteer-table table {
     padding: 1rem;
+  }
+
+  .volunteer-table table {
+    min-width: 80px;
+  }
+
+  .volunteer-table th,
+  .volunteer-table td {
+    font-size: 15px;
+  }
+
+  .volunteer-table .logo-text {
+    padding: 0 5px;
+    font-size: 15px;
   }
 
   .contact form {
@@ -263,18 +304,23 @@ label {
     margin: 1.5rem;
   }
 
-  .volunteer-card table {
-    padding: 0;
-  }
-
   section {
     padding: 1rem;
     margin-bottom: 1.5rem;
   }
 
-  .volunteer-card th,
-  .volunteer-card td {
+  .volunteer-table {
+    margin: 0.6rem auto;
+  }
+
+  .volunteer-table table {
+    min-width: 50px;
+  }
+
+  .volunteer-table th,
+  .volunteer-table td {
     padding: 6px 5px 3px 5px;
+    font-size: 12px;
   }
 
   .interests-images {
@@ -285,5 +331,13 @@ label {
   .interests-images img {
     height: 3rem;
     padding-left: 0;
+  }
+
+  .volunteer-table .logo-text {
+    font-size: 10px;
+  }
+
+  .volunteer-table .table-bottom td {
+    padding: 4px 10px 0;
   }
 }
