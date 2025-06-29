@@ -47,7 +47,7 @@ section {
 
 .site-map .rect-content {
   width: 160px;
-  height: 180px;
+  height: 200px;
   pointer-events: all;
   transition: stroke 0.3s ease;
 }
@@ -81,7 +81,30 @@ section {
   .svg-mobile {
     display: block;
   }
+
   .svg-desktop {
     display: none;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  section {
+    margin: 1rem;
+    height: 800px;
+  }
+
+  .site-map .rect1 {
+    width: 110px;
+  }
+
+  .site-map .rect-content {
+    width: 120px;
+    height: 190px;
+  }
+
+  .site-map .content-text {
+    font-size: 10px;
   }
 }
