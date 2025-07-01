@@ -69,6 +69,16 @@ a:hover {
   color: #777;
 }
 
+.logo-text a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.logo-text a:hover {
+  color: #ddd;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -111,8 +121,16 @@ img {
 }
 
 .logo img {
-  width: 20%;
-  height: 20%;
+  height: 40px;
+  width: auto;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.logo-primary img {
+  height: 30px;
+  width: auto;
+  vertical-align: middle;
 }
 
 .logo-separator {

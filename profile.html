@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Global Climate Data | SAGE</title>
+    <title>Profile | SAGE</title>
     <link rel="stylesheet" href="./css/global.css" />
     <link rel="stylesheet" href="./css/profile.css" />
     <link rel="icon" href="./assets/images/favicon.png" />
@@ -26,36 +26,41 @@
     <header class="header" id="header">
       <div class="header-left">
         <div style="display: flex; align-items: center; gap: 16px">
-          <div class="logo logo-text">SAGE</div>
+          <div class="logo-primary">
+            <a href="/"><img src="./assets/images/logo.png" alt="SAGE" /></a>
+          </div>
+          <div class="logo logo-text"><a href="/">SAGE</a></div>
           <div class="logo-separator"></div>
           <div class="logo">
-            <img src="./assets/images/sdgsaf.webp" alt="SDG Logo" />
+            <a href="https://sdgs.un.org/" target="_blank">
+              <img src="./assets/images/sdgsaf.webp" alt="SDG Logo" />
+            </a>
           </div>
         </div>
         <div class="mobile-menu-button" onclick="toggleMobileMenu()">☰</div>
       </div>
 
       <nav class="nav-links">
-        <a href="/">Home</a>
-        <a href="#">Volunteer</a>
+        <a href="/home.html">Home</a>
+        <a href="./volunteer.html">Volunteer</a>
         <a href="/table.html">Climate Data</a>
-        <a href="#">Government</a>
-        <a href="#">Customers</a>
-        <a href="#">Resources</a>
+        <a href="./team.html">Team</a>
+        <a href="./sitemap.html">Sitemap</a>
+        <a href="./feedback.html">Feedback</a>
       </nav>
 
       <div class="header-right">
-        <a href="profile.html" class="profile-button">Profile →</a>
+        <a href="./profile.html" class="profile-button">Profile →</a>
       </div>
 
       <div class="mobile-nav" id="mobileNav">
-        <a href="/">Home</a>
-        <a href="#">Volunteer</a>
+        <a href="/home.html">Home</a>
+        <a href="./volunteer.html">Volunteer</a>
         <a href="/table.html">Climate Data</a>
-        <a href="#">Government</a>
-        <a href="#">Customers</a>
-        <a href="#">Resources</a>
-        <a href="#" class="profile-button">Profile →</a>
+        <a href="./team.html">Team</a>
+        <a href="./sitemap.html">Sitemap</a>
+        <a href="./feedback.html">Feedback</a>
+        <a href="./profile.html" class="profile-button">Profile →</a>
       </div>
     </header>
     <main>
@@ -71,25 +76,40 @@
           <div class="user-info">
             <h2>Dr. Aiden Thomas</h2>
             <p class="role">Environmental Policy Advisor</p>
-            <p>Age: 38 years</p>
-            <p>Location: Melbourne, Australia</p>
-            <p>
-              Work: Collaborates with environmental think tanks, government
-              bodies, and non-profits to shape legislation on renewable energy,
-              carbon emissions reduction, and sustainable agriculture practices.
-              Regularly speaks at global climate forums and advises on
-              international agreements.
-            </p>
-            <p>
-              Education: Ph.D. in Environmental Policy, MPhil in Sustainable
-              Development
-            </p>
+
+            <div class="content">
+              <label>Age:</label>
+              <span>38 years</span>
+            </div>
+
+            <div class="content">
+              <label>Location:</label>
+              <span>Melbourne, Australia</span>
+            </div>
+
+            <div class="content">
+              <label>Work:</label>
+              <span>
+                Collaborates with environmental think tanks, government bodies,
+                and non-profits to shape legislation on renewable energy, carbon
+                emissions reduction, and sustainable agriculture practices.
+                Regularly speaks at global climate forums and advises on
+                international agreements.
+              </span>
+            </div>
+
+            <div class="content">
+              <label>Education:</label>
+              <span>
+                Ph.D. in Environmental Policy, MPhil in Sustainable Development
+              </span>
+            </div>
           </div>
         </section>
 
         <section class="user-intro">
-          <h1>Introduction</h1>
-          <p>
+          <h1 class="page-label">Introduction</h1>
+          <p class="content">
             Hello, I'm Dr. Aiden Thomas. My work lies at the intersection of
             science, policy, and advocacy. I am passionate about driving policy
             changes that empower communities to lead sustainable lives, and I
@@ -100,7 +120,7 @@
 
         <section class="skills">
           <div class="category">
-            <h1>Skills</h1>
+            <h1 class="page-label">Skills</h1>
             <ul>
               <li>Policy Development</li>
               <div class="progress-bar">
@@ -128,7 +148,7 @@
 
         <section class="goals">
           <div class="category">
-            <h1>Goals</h1>
+            <h1 class="page-label">Goals</h1>
             <ul>
               <li>
                 Push for net-zero emissions legislation in 3 Australian states
@@ -144,12 +164,19 @@
               <div class="progress-bar">
                 <div class="progress-fill" style="width: 75%">75%</div>
               </div>
+              <li>
+                Establish partnerships with 50 local councils to implement
+                community climate action plans
+              </li>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 40%">40%</div>
+              </div>
             </ul>
           </div>
         </section>
 
         <section class="frustrations">
-          <h1>Frustrations</h1>
+          <h1 class="page-label">Frustrations</h1>
           <ul>
             <li>Inconsistent climate policies across regions</li>
             <li>Delays in funding approvals for green initiatives</li>
@@ -161,7 +188,7 @@
         </section>
 
         <section class="experience">
-          <h1>Experience</h1>
+          <h1 class="page-label">Experience</h1>
           <ul>
             <li>
               Global Climate Alliance, Sydney, Australia <br />
@@ -194,7 +221,7 @@
         </section>
 
         <section class="interests-card">
-          <h1>Interests</h1>
+          <h1 class="page-label">Interests</h1>
           <div class="interests-images">
             <img src="./assets/images/plant.png" alt="Plant icon" />
             <p>Urban Gardening</p>
@@ -208,7 +235,7 @@
         </section>
 
         <section class="volunteer-card">
-          <h1>Volunteering Availability</h1>
+          <h1 class="page-label">Volunteering Availability</h1>
           <div class="volunteer-table">
             <table>
               <thead>
@@ -259,7 +286,7 @@
         </section>
 
         <section class="contact">
-          <h1>Contact Me</h1>
+          <h1 class="page-label">Contact Me</h1>
           <form action="#" method="post">
             <div class="form-row">
               <div class="form-group">
@@ -313,37 +340,41 @@
               </div>
             </div>
 
-            <label for="reason">Reason <span class="asterisk">*</span></label>
-            <select id="reason" name="reason" required>
-              <option value="" disabled selected>Select a reason</option>
-              <option value="climate-action">
-                Interested in climate action
-              </option>
-              <option value="sustainability">
-                Inquiring about sustainability initiatives
-              </option>
-              <option value="environmental-education">
-                Seeking environmental education resources
-              </option>
-              <option value="partnership">
-                Interested in collaboration or partnership
-              </option>
-              <option value="volunteering">
-                Interested in volunteering opportunities
-              </option>
-              <option value="general-inquiry">General inquiry</option>
-            </select>
+            <div class="form-group">
+              <label for="reason">Reason <span class="asterisk">*</span></label>
+              <select id="reason" name="reason" required>
+                <option value="" disabled selected>Select a reason</option>
+                <option value="climate-action">
+                  Interested in climate action
+                </option>
+                <option value="sustainability">
+                  Inquiring about sustainability initiatives
+                </option>
+                <option value="environmental-education">
+                  Seeking environmental education resources
+                </option>
+                <option value="partnership">
+                  Interested in collaboration or partnership
+                </option>
+                <option value="volunteering">
+                  Interested in volunteering opportunities
+                </option>
+                <option value="general-inquiry">General inquiry</option>
+              </select>
+            </div>
 
-            <label for="message"
-              >Message / Inquiry <span class="asterisk">*</span></label
-            >
-            <textarea
-              id="message"
-              name="message"
-              rows="5"
-              placeholder="Write your message here..."
-              required
-            ></textarea>
+            <div class="form-group">
+              <label for="message"
+                >Message / Inquiry <span class="asterisk">*</span></label
+              >
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Write your message here..."
+                required
+              ></textarea>
+            </div>
 
             <div class="form-buttons">
               <button
@@ -379,42 +410,58 @@
       <div class="footer-grid">
         <div class="footer-column">
           <h4>Website Links</h4>
-          <a href="#">Home</a>
-          <a href="#">Shop</a>
-          <a href="#">Gallery</a>
-          <a href="#">Feedback</a>
-          <a href="#">Team</a>
+          <a href="/home.html">Home</a>
+          <a href="./volunteer.html">Volunteer</a>
+          <a href="/table.html">Climate Data</a>
+          <a href="./team.html">Team</a>
           <a href="./sitemap.html">Sitemap</a>
+          <a href="./feedback.html">Feedback</a>
         </div>
 
         <div class="footer-column">
           <h4>Useful Links</h4>
-          <a href="#">Conditions</a>
-          <a href="#">Privacy Policy</a>
-          <a href="#">Cookies</a>
-          <a href="#">Anti Corruption</a>
-          <a href="#">Asset License</a>
+          <a
+            href="https://www.undp.org/sustainable-development-goals"
+            target="_blank"
+            >Conditions</a
+          >
+          <a
+            href="https://sdgactioncampaign.org/privacy-policy/"
+            target="_blank"
+            >Privacy Policy</a
+          >
+          <a href="https://sdgdata.gov.uk/cookies/" target="_blank">Cookies</a>
+          <a
+            href="https://anti-corruption.org/themes/anti-corruption-in-sdgs-2/"
+            target="_blank"
+            >Anti Corruption</a
+          >
+          <a
+            href="https://www.un.org/sustainabledevelopment/news/communications-material/"
+            target="_blank"
+            >Asset License</a
+          >
         </div>
 
         <div class="footer-column">
           <h4>Content Pages</h4>
-          <a href="#">Content 01</a>
+          <a href=".content_ST1.html">Content 01</a>
           <a href="./content_ST2.html">Content 02</a>
-          <a href="#">Content 03</a>
-          <a href="#">Content 04</a>
+          <a href="./content_ST3.html">Content 03</a>
+          <a href="./content_ST4.html">Content 04</a>
         </div>
 
         <div class="footer-column">
           <h4>Student Pages</h4>
-          <a href="#">Student 01</a>
-          <a href="#">Student 02</a>
-          <a href="#">Student 03</a>
-          <a href="#">Student 04</a>
+          <a href="./pageEditor_ST1.html">Student 01</a>
+          <a href="./pageEditor_ST2.html">Student 02</a>
+          <a href="./pageEditor_ST3.html">Student 03</a>
+          <a href="./pageEditor_ST4.html">Student 04</a>
         </div>
       </div>
 
       <div class="footer-bottom">
-        <p>Copyright © 2025 SAGE. All rights reserved.</p>
+        <p>Copyright © 2025 WebDev Group 5 Subgroup 5. All rights reserved.</p>
       </div>
     </footer>
 

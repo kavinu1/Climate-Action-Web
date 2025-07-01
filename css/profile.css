@@ -2,10 +2,13 @@ body {
   background-color: #f5f7fa;
 }
 
-h1,
 h2 {
-  color: #2f7e4c;
+  color: #14cb5a;
   margin-bottom: 1rem;
+}
+
+.page-label {
+  font-size: 20px;
 }
 
 .profile-layout {
@@ -27,17 +30,18 @@ section {
 
 section:hover {
   overflow: auto;
+  scroll-behavior: smooth;
   scrollbar-width: thin;
   scrollbar-color: #8b8b8b transparent;
   box-shadow: 0 6px 24px rgba(95, 148, 106, 0.651);
 }
 
 .user-info {
-  height: 410px;
+  height: 430px;
 }
 
 .user-intro {
-  height: 270px;
+  height: 265px;
 }
 
 .skills {
@@ -45,7 +49,7 @@ section:hover {
 }
 
 .goals {
-  height: 435px;
+  height: 537px;
 }
 
 .frustrations {
@@ -53,14 +57,14 @@ section:hover {
 }
 
 .experience {
-  height: 585px;
+  height: 500px;
 }
 
 .avatar {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 4px solid #81c784;
+  border: 4px solid #14cb5a;
   object-fit: cover;
 }
 
@@ -80,8 +84,8 @@ section:hover {
   font-weight: bold;
 }
 
-.user-info p {
-  text-align: justify;
+.content span {
+  color: #5a5a5a;
 }
 
 li {
@@ -239,7 +243,7 @@ label {
 
 .form-group {
   flex: 1;
-  min-width: 250px;
+  min-width: 200px;
 }
 
 .form-group label {
@@ -307,6 +311,10 @@ label {
   section {
     padding: 1rem;
     margin-bottom: 1.5rem;
+  }
+
+  .page-label {
+    font-size: 18px;
   }
 
   .volunteer-table {

@@ -1,0 +1,142 @@
+.container {
+  display: flex;
+  max-width: 1500px;
+}
+
+.content {
+  padding: 0 15px 0 40px;
+}
+
+.content-h {
+  padding: 1rem 0;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(77, 71, 71, 0.1);
+}
+
+.content-h h1 {
+  font-size: 2rem;
+  color: #09b44b;
+}
+
+.sidebar {
+  width: 950px;
+  border-radius: 15px;
+  padding: 24px 20px;
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
+  transition: width 0.3s ease;
+}
+
+.sidebar .logo-text {
+  color: #14cb5a;
+}
+
+.nav li {
+  padding: 12px;
+  list-style: none;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.nav li:hover {
+  background: #f0f4ff;
+  color: #1a73e8;
+}
+
+.nav li i {
+  margin-right: 15px;
+  color: #2d6a4f;
+  font-size: 16px;
+}
+
+.header-for-content {
+  margin-top: 1.5rem;
+  color: #14cb5a;
+}
+
+iframe {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: 28rem;
+  border: none;
+}
+
+#what-is-climate-science iframe {
+  margin: 2rem auto 1rem;
+  height: 22rem;
+  max-width: 40rem;
+}
+
+img {
+  margin: 1rem auto;
+}
+
+#climate-systems img {
+  max-height: 28rem;
+}
+
+#greenhouse-gases img {
+  max-height: 32rem;
+}
+
+#resources ul {
+  padding: 0 50px;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: fit-content;
+    text-align: center;
+    padding: 10px 5px;
+  }
+
+  .nav li span {
+    display: none;
+  }
+
+  .nav li i {
+    margin: auto;
+  }
+
+  iframe {
+    height: auto;
+  }
+
+  #what-is-climate-science iframe {
+    max-height: 22rem;
+    margin: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .content {
+    padding: 0 10px 0 20px;
+  }
+
+  .content-h h1 {
+    font-size: 20px;
+  }
+
+  .header-for-content {
+    font-size: 18px;
+    margin: 0.3rem 0;
+  }
+
+  .content p,
+  #resources ul {
+    font-size: 14px;
+    margin-bottom: 0.3rem;
+  }
+
+  .sidebar .logo-text {
+    margin-top: 0.5rem;
+    font-size: 16px;
+  }
+
+  #what-is-climate-science iframe {
+    height: 13rem;
+    padding: 0.8rem 0;
+  }
+}
