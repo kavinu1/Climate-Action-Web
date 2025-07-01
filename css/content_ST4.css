@@ -56,25 +56,43 @@
 }
 
 iframe {
-  display: block;
   margin: 0 auto;
   width: 100%;
   height: 28rem;
+  border-radius: 16px;
   border: none;
 }
 
-#what-is-climate-science iframe {
-  margin: 2rem auto 1rem;
-  height: 22rem;
-  max-width: 40rem;
+.video-frame {
+  width: 65%;
+  margin: auto;
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  height: 100%;
 }
 
 img {
   margin: 1rem auto;
 }
 
+.climate-img {
+  margin-top: 2rem;
+  border-radius: 2rem;
+  width: 60%;
+}
+
 #climate-systems img {
-  max-height: 28rem;
+  width: 60%;
 }
 
 #greenhouse-gases img {
@@ -103,14 +121,9 @@ img {
   iframe {
     height: auto;
   }
-
-  #what-is-climate-science iframe {
-    max-height: 22rem;
-    margin: auto;
-  }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .content {
     padding: 0 10px 0 20px;
   }
@@ -135,8 +148,17 @@ img {
     font-size: 16px;
   }
 
-  #what-is-climate-science iframe {
-    height: 13rem;
-    padding: 0.8rem 0;
+  .climate-img {
+    width: 100%;
+    margin-top: 1.5rem;
+  }
+
+  #climate-systems img {
+    width: 80%;
+  }
+
+  .video-frame {
+    width: 100%;
+    margin: 1rem auto;
   }
 }
