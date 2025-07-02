@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page Editor | SAGE</title>
+    <title>Student 4: Page Editor | SAGE</title>
     <link rel="stylesheet" href="./css/global.css" />
     <link rel="stylesheet" href="./css/pageEditor_validator.css" />
     <link rel="icon" href="./assets/images/favicon.png" />
@@ -69,14 +69,10 @@
     </section>
 
     <div class="container">
-      <!-- Sidebar area -->
       <aside>
         <h3>Core pages developed:</h3>
         <hr />
-
-        <!-- Customize this to the role you undertook. Keep only the list items you were responsible to develop, delete the rest -->
         <ul class="top-level-ul">
-          <!-- Keep only the list items you were responsible to develop, delete the rest and update the links to the corresponding markers -->
           <li>Student 1</li>
           <ul>
             <li><a href="#">Splash page</a></li>
@@ -106,82 +102,192 @@
           <li><a href="#ref">References</a></li>
         </ul>
       </aside>
-      <!-- Main content area -->
+
       <main>
-        <!-- Update those first three sections for the pages you were responsible to implement -->
         <div class="content">
           <section>
             <h2 id="profile">Profile Page</h2>
             <hr />
             <h3>Technical Description</h3>
-            <p>
-              Explain the HTML and CSS techniques used to implement this page.
-              Justify the logic and purpose of the key tags and styling choices
-              focusing on functionality and design without copying large code
-              sections. Explain the purpose of key HTML tags and CSS properties.
-              Specify key HTML tags and CSS properties used to create structure
-              and styling.
-            </p>
+            <p>Key HTML and CSS techniques used:</p>
+            <ul>
+              <li>
+                HTML Structure:
+                <ul>
+                  <li>
+                    Used semantic tags like <code>&lt;section&gt;</code>,
+                    <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>,
+                    <code>&lt;footer&gt;</code>, and
+                    <code>&lt;main&gt;</code> for accessibility and logical
+                    layout.
+                  </li>
+                  <li>
+                    Profile content is grouped into clear categories such as
+                    user info, skills, goals, and contact form using separate
+                    <code>&lt;section&gt;</code> blocks.
+                  </li>
+                  <li>
+                    Used <code>&lt;ul&gt;</code> and <code>&lt;li&gt;</code> for
+                    lists of skills, goals, and experiences.
+                  </li>
+                  <li>
+                    Form inputs are labeled with
+                    <code>&lt;label for&gt;</code> for better accessibility and
+                    validation.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                CSS Styling:
+                <ul>
+                  <li>
+                    Used <code>column-count</code> in
+                    <code>.profile-layout</code> to create a two-column
+                    responsive layout.
+                  </li>
+                  <li>
+                    Used <code>border-radius</code>, <code>box-shadow</code>,
+                    and <code>transition</code> for smooth hover effects on
+                    cards.
+                  </li>
+                  <li>
+                    Each section uses max-width and padding for clear spacing
+                    and visual hierarchy.
+                  </li>
+                  <li>
+                    Progress bars for skills and goals are implemented using
+                    <code>.progress-bar</code> and
+                    <code>.progress-fill</code> divs with dynamic
+                    <code>width</code> values.
+                  </li>
+                  <li>
+                    Responsive design handled using media queries for tablet and
+                    mobile screen widths.
+                  </li>
+                </ul>
+              </li>
+            </ul>
 
             <h3>Accessibility</h3>
+            <ul>
+              <li>
+                Semantic HTML tags (e.g. <code>&lt;main&gt;</code>,
+                <code>&lt;section&gt;</code>) enhance screen reader
+                compatibility.
+              </li>
+              <li>
+                All images use descriptive <code>alt</code> attributes (e.g.
+                profile photo, interest icons).
+              </li>
+              <li>
+                Form inputs include <code>&lt;label&gt;</code> elements linked
+                to <code>id</code>s using <code>for</code> attributes.
+              </li>
+              <li>
+                Color contrast (e.g. green buttons on light backgrounds) ensures
+                text is readable.
+              </li>
+              <li>
+                A scroll-to-top button with <code>aria-label</code> improves
+                keyboard navigation and accessibility.
+              </li>
+              <li>
+                Focus states and input validation (e.g.
+                <code>required</code> fields) support user interaction.
+              </li>
+            </ul>
+
+            <h3>Link to the Validation Page</h3>
             <p>
-              Explain how you used to addressed accessibility in this particular
-              page you implemented.
+              <a href="./validation_ST4.html#profileVal">Profile Validation </a
+              >| Student 4: Validation Page
             </p>
 
-            <h3>Link to the validation page</h3>
-            <!-- Update the path to link the Page Editor with the profile page -->
+            <h3>Link to the Page</h3>
             <p>
-              <a href="./validation_ST4.html#profileVal"
-                >Include a link to the validation page</a
-              >, use the marker to jump to the corresponding section of the
-              validation page.
-            </p>
-            <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the profile page -->
-
-            <h3>Link to the page</h3>
-            <p>
-              <a href="./profile.html"
-                >Include a link to the actual page you describe.</a
-              >
+              <a href="./profile.html">Profile Page</a>
             </p>
           </section>
 
           <section>
             <h2 id="sitemap">Sitemap Page</h2>
             <hr />
-            <h3>Technical Description</h3>
 
-            <p>
-              Explain the HTML and CSS techniques used to implement this page.
-              Justify the logic and purpose of the key tags and styling choices
-              focusing on functionality and design without copying large code
-              sections. Explain the purpose of key HTML tags and CSS properties.
-              Specify key HTML tags and CSS properties used to create structure
-              and styling.
-            </p>
+            <h3>Technical Description</h3>
+            <ul>
+              <li>HTML Structure:</li>
+              <ul>
+                <li>
+                  Uses semantic HTML elements like
+                  <code>&lt;section&gt;</code> and <code>&lt;main&gt;</code> for
+                  structure and readability.
+                </li>
+                <li>
+                  Interactive sitemap created using <code>&lt;svg&gt;</code>,
+                  <code>&lt;rect&gt;</code>, <code>&lt;text&gt;</code>, and
+                  <code>&lt;line&gt;</code> for scalable vector graphics.
+                </li>
+                <li>
+                  SVG elements are nested in <code>&lt;a&gt;</code> tags to
+                  enable clickable navigation.
+                </li>
+                <li>
+                  Separate SVG structures are used for desktop and mobile views
+                  with <code>.svg-desktop</code> and
+                  <code>.svg-mobile</code> classes.
+                </li>
+              </ul>
+
+              <li>CSS Techniques:</li>
+              <ul>
+                <li>
+                  SVG elements are styled using class selectors like
+                  <code>.rect1</code>, <code>.rect2</code>,
+                  <code>.rect3</code> to differentiate shape sizes.
+                </li>
+                <li>
+                  <code>fill</code>, <code>stroke</code>, and
+                  <code>transition</code> properties enhance interactivity with
+                  hover effects on rectangles.
+                </li>
+                <li>
+                  Text within SVGs styled via <code>svg text</code> selectors
+                  for font size and color control.
+                </li>
+                <li>
+                  <code>section</code> has max width/height and shows scrollbars
+                  on hover to keep layout clean initially.
+                </li>
+                <li>
+                  Responsiveness handled using media queries: below 600px, the
+                  desktop SVG is hidden and the mobile SVG is shown instead.
+                </li>
+              </ul>
+            </ul>
 
             <h3>Accessibility</h3>
+            <ul>
+              <li>Uses semantic tags to improve screen reader support.</li>
+              <li>
+                Links embedded within <code>&lt;a&gt;</code> tags inside SVGs
+                allow keyboard and assistive technology access.
+              </li>
+              <li>Hover effects provide visual feedback for mouse users.</li>
+              <li>
+                Mobile-friendly version ensures the content is accessible on
+                smaller screens.
+              </li>
+            </ul>
+
+            <h3>Link to the Validation Page</h3>
             <p>
-              Explain how you used to addressed accessibility in this particular
-              page you implemented.
+              <a href="./validation_ST4.html#sitemapVal">Sitemap Validation </a
+              >| Student 4: Validation Page
             </p>
 
-            <h3>Link to the validation page</h3>
-            <!-- Update the path to link the Page Editor with the sitemap page -->
+            <h3>Link to the Page</h3>
             <p>
-              <a href="./validation_ST4.html#sitemapVal"
-                >Include a link to the validation page</a
-              >, use the marker to jump to the corresponding section of the
-              validation page.
-            </p>
-            <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the sitemap page -->
-
-            <h3>Link to the page</h3>
-            <p>
-              <a href="./sitemap.html"
-                >Include a link to the actual page you describe.</a
-              >
+              <a href="./sitemap.html">Sitemap Page</a>
             </p>
           </section>
 
@@ -189,79 +295,219 @@
             <h2 id="content">Content Page</h2>
             <hr />
             <h3>Technical Description</h3>
-            <p>
-              Explain the HTML and CSS techniques used to implement this page.
-              Justify the logic and purpose of the key tags and styling choices
-              focusing on functionality and design without copying large code
-              sections. Explain the purpose of key HTML tags and CSS properties.
-              Specify key HTML tags and CSS properties used to create structure
-              and styling.
-            </p>
+            <ul>
+              <li>HTML Structure:</li>
+              <ul>
+                <li>
+                  Uses semantic tags like <code>&lt;section&gt;</code>,
+                  <code>&lt;nav&gt;</code>, and <code>&lt;main&gt;</code> to
+                  structure content meaningfully.
+                </li>
+                <li>
+                  The sidebar uses a nested <code>&lt;ul&gt;</code> list with
+                  icons and anchor tags linking to specific
+                  <code>id</code>-based sections for smooth in-page navigation.
+                </li>
+                <li>
+                  Each section contains a heading, descriptive text, and
+                  relevant media (e.g. <code>&lt;img&gt;</code> and
+                  <code>&lt;iframe&gt;</code>).
+                </li>
+                <li>
+                  Embedded YouTube and interactive maps are included using
+                  <code>&lt;iframe&gt;</code> tags inside responsive wrappers.
+                </li>
+              </ul>
+
+              <li>CSS Styling:</li>
+              <ul>
+                <li>
+                  The page layout is split using a flex container in the
+                  <code>.container</code> class to position sidebar and content
+                  side-by-side.
+                </li>
+                <li>
+                  <code>.sidebar</code> is styled with padding, box-shadow, and
+                  hover transitions for a card-like UI with interactive
+                  navigation items.
+                </li>
+                <li>
+                  Section headings use distinct classes like
+                  <code>.content-h</code> and
+                  <code>.header-for-content</code> to control size and color
+                  (e.g. <span>green highlights</span>).
+                </li>
+                <li>
+                  Responsive design handled using media queries for screens
+                  under 768px and 600px. This hides sidebar text labels and
+                  adjusts padding/font sizes.
+                </li>
+                <li>
+                  <code>iframe</code> and <code>img</code> tags are styled for
+                  full width display, with <code>border-radius</code> and
+                  <code>box-shadow</code> for visual polish.
+                </li>
+              </ul>
+            </ul>
 
             <h3>Accessibility</h3>
+            <ul>
+              <li>
+                All images include descriptive <code>alt</code> text (e.g.
+                "Greenhouse gas chart", "Earth’s climate system").
+              </li>
+              <li>
+                Consistent heading levels (<code>h1</code>, <code>h2</code>) for
+                proper content hierarchy, supporting screen readers and keyboard
+                navigation.
+              </li>
+              <li>
+                Embedded videos and maps use descriptive
+                <code>title</code> attributes for accessibility.
+              </li>
+              <li>
+                Contrast-friendly text and hover effects improve readability for
+                all users.
+              </li>
+              <li>
+                Navigation sidebar uses anchor links with clear labels and icons
+                to support both visual and keyboard navigation.
+              </li>
+            </ul>
+
+            <h3>Link to the Validation Page</h3>
             <p>
-              Explain how you used to addressed accessibility in this particular
-              page you implemented.
+              <a href="./validation_ST4.html#contentVal"> Content Validation </a
+              >| Student 4: Validation Page
             </p>
 
-            <h3>Link to the validation page</h3>
-            <!-- Update the path to link the Page Editor with the content page -->
+            <h3>Link to the Page</h3>
             <p>
-              <a href="./validation_ST4.html#contentVal"
-                >Include a link to the validation page</a
-              >, use the marker to jump to the corresponding section of the
-              validation page.
-            </p>
-            <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the content page -->
-
-            <h3>Link to the page</h3>
-            <p>
-              <a href="./content.html"
-                >Include a link to the actual page you describe.</a
-              >
+              <a href="./content_ST4.html"> Content Page </a>
             </p>
           </section>
 
           <section>
             <h2 id="challenge">Challenges and Lessons Learned</h2>
             <hr />
-            <p>
-              Detail any challenges encountered during the implementation
-              process and explain how they were resolved. Reflect on the lessons
-              learned from overcoming these challenges.
-            </p>
+            <ul>
+              <li>
+                Responsive Design: Ensuring proper layout across screen sizes
+                was challenging. Media queries were applied to restructure
+                content like sidebars and form elements for better mobile
+                usability.
+              </li>
+              <li>
+                SVG Implementation: Building an interactive visual sitemap using
+                SVG required learning how to nest
+                <code>&lt;a&gt;</code> elements inside
+                <code>&lt;svg&gt;</code> and style them with CSS for hover
+                feedback.
+              </li>
+              <li>
+                Form Accessibility: Structuring form fields with proper
+                <code>&lt;label for&gt;</code> usage, placeholder text, and
+                required validation enhanced accessibility and user guidance.
+              </li>
+              <li>
+                Content Linking: Creating section-based anchor navigation in the
+                content page required accurate ID management and styling
+                consistency between links and their target sections.
+              </li>
+              <li>
+                Lessons Learned: A key takeaway is that accessibility,
+                responsiveness, and semantic structure are just as important as
+                visual design. Online documentation and validators were vital to
+                overcoming development issues.
+              </li>
+            </ul>
           </section>
 
           <section>
             <h2 id="compliance">Compliance</h2>
             <hr />
-            <p>
-              Discuss how the pages you have created are compliant with Janet
-              regulations governing web page publication. This includes
-              demonstrating your understanding and application of these
-              regulations. Be realistic and truthful.
-            </p>
+            <ul>
+              <li>
+                HTML & CSS Validation: The site complies with HTML5 and CSS3
+                standards, verified through W3C validation tools. Errors and
+                warnings were resolved throughout the development process.
+              </li>
+              <li>
+                Accessibility: The site includes semantic elements, alt
+                attributes for images, accessible form labels, and logical
+                heading structures, aligning with WCAG 2.1 guidelines.
+              </li>
+              <li>
+                JANET Guidelines: All content adheres to JANET's Acceptable Use
+                Policy by avoiding commercial or inappropriate material, using
+                verified educational sources, and ensuring user safety.
+              </li>
+              <li>
+                Copyright and Data: All external resources are credited, and no
+                personal data is collected or stored, meeting GDPR expectations.
+              </li>
+            </ul>
           </section>
 
           <section>
             <h2 id="ref">References</h2>
             <hr />
-            <p>
-              Provide links to resources you used following a consistent format
-              (e.g., APA, MLA, or a simplified style). For example:<br /><br />
-            </p>
-            <ul class="ref">
-              <li>
-                iStock (2025) <i>iStock.</i> Available at:
-                <a href="#">https://www.istockphoto.com/</a> (Last accessed: 11
-                Feb 2025).
-              </li>
-              <li>
-                Duckett, J., 2011. HTML and CSS: Design and Build Websites,<i
-                  >John Willey&Sons. Inc. Indianappolis.</i
-                >
-              </li>
-            </ul>
+            <div class="ref">
+              <ul>
+                <li>
+                  Duckett, J. (2011)
+                  <i>HTML and CSS: Design and Build Websites</i>. Indianapolis:
+                  John Wiley & Sons.
+                </li>
+                <li>
+                  iStock (2025)
+                  <i>Royalty-free Images and Stock Photography</i>. Available
+                  at:
+                  <a href="https://www.istockphoto.com/"
+                    >https://www.istockphoto.com/</a
+                  >
+                  (Accessed: 2 July 2025).
+                </li>
+                <li>
+                  MDN Web Docs (2025) <i>HTML: HyperText Markup Language</i>.
+                  Available at:
+                  <a href="https://developer.mozilla.org/en-US/"
+                    >https://developer.mozilla.org/en-US/</a
+                  >
+                  (Accessed: 2 July 2025).
+                </li>
+                <li>
+                  NASA (2025) <i>Climate Change: Vital Signs of the Planet</i>.
+                  Available at:
+                  <a href="https://climate.nasa.gov/"
+                    >https://climate.nasa.gov/</a
+                  >
+                  (Accessed: 2 July 2025).
+                </li>
+                <li>
+                  IPCC (2025) <i>Reports</i>. Available at:
+                  <a href="https://www.ipcc.ch/">https://www.ipcc.ch/</a>
+                  (Accessed: 2 July 2025).
+                </li>
+                <li>
+                  W3C (2025) <i>Markup Validation Service</i>. Available at:
+                  <a href="https://validator.w3.org/"
+                    >https://validator.w3.org/</a
+                  >
+                  (Accessed: 2 July 2025).
+                </li>
+                <li>
+                  W3Schools (2025)
+                  <i>CSS Responsive Web Design - Media Queries</i>. Available
+                  at:
+                  <a
+                    href="https://www.w3schools.com/css/css_rwd_mediaqueries.asp"
+                    >https://www.w3schools.com/css/css_rwd_mediaqueries.asp</a
+                  >
+                  (Accessed: 2 July 2025).
+                </li>
+              </ul>
+            </div>
           </section>
         </div>
       </main>
