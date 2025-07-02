@@ -88,9 +88,20 @@ section:hover {
   color: #5a5a5a;
 }
 
+section ul {
+  margin-left: 1rem;
+}
+
+section ul li::marker {
+  color: #10a74a;
+}
+
+section ul ul li {
+  margin: 0.5rem 0;
+}
+
 li {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
   color: #555;
   text-align: justify;
 }
@@ -315,6 +326,14 @@ label {
 
   .page-label {
     font-size: 18px;
+  }
+
+  .role {
+    font-size: 1rem;
+  }
+
+  .content {
+    font-size: 0.91rem;
   }
 
   .volunteer-table {
