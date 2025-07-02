@@ -65,38 +65,22 @@
     </header>
 
     <section class="content-h">
-      <h2>Kavinu Thepul, Student 04</h2>
+      <h2>Kavinu Thepul | Page Editor | Student 04</h2>
     </section>
 
     <div class="container">
-      <aside>
+      <aside class="sidebar-validation">
         <h3>Core pages developed:</h3>
         <hr />
         <ul class="top-level-ul">
-          <li>Student 1</li>
-          <ul>
-            <li><a href="#">Splash page</a></li>
-            <li><a href="#">Volunteer page</a></li>
-            <li><a href="#">Content page</a></li>
-          </ul>
-          <li>Student 2</li>
-          <ul>
-            <li><a href="#">Home page </a></li>
-            <li><a href="#">Table page</a></li>
-            <li><a href="#">Content page</a></li>
-          </ul>
-          <li>Student 3</li>
-          <ul>
-            <li><a href="#">Feedback page</a></li>
-            <li><a href="#">Team page</a></li>
-            <li><a href="#">Content page</a></li>
-          </ul>
-          <li>Student 4</li>
-          <ul>
-            <li><a href="#profileVal">Profile page validation</a></li>
-            <li><a href="#sitemapVal">Sitemap page validation</a></li>
-            <li><a href="#contentVal">Content page validation</a></li>
-          </ul>
+          <li>
+            Student 4
+            <ul>
+              <li><a href="#profileVal">Profile page validation</a></li>
+              <li><a href="#sitemapVal">Sitemap page validation</a></li>
+              <li><a href="#contentVal">Content page validation</a></li>
+            </ul>
+          </li>
         </ul>
       </aside>
       <main>
@@ -104,15 +88,23 @@
           <section>
             <h2 id="profileVal">Profile Page validation report</h2>
             <hr />
+            <h3>Validation</h3>
             <p>
-              The profile page passed HTML and CSS validation with no critical
-              errors. Minor warnings were resolved by improving form field
-              labeling and image alt text. The layout's use of semantic tags and
-              structured content helped meet accessibility and validation
-              requirements.
+              The profile page passedvalidation with no critical errors. The
+              layout's use of semantic tags and structured content helped meet
+              accessibility and validation requirements.
             </p>
+            <p>
+              Note: The Prettier extension in VS Code automatically added
+              self-closing slashes (e.g.
+              <code>&lt;img /&gt;</code>) to void elements. While technically
+              valid according to HTML5 specifications, these self-closing tags
+              may trigger informational messages from the W3C validator.
+              However, they are left as-is, since they are valid HTML5 syntax.
+            </p>
+
             <img
-              src="validationSnapshots/validation_profile.png"
+              src="./assets/validationSnapshots_ST4/validation_profile.jpeg"
               alt="Profile Page Validation Screenshot"
             />
 
@@ -126,14 +118,23 @@
           <section>
             <h2 id="sitemapVal">Sitemap Page validation report</h2>
             <hr />
+            <h3>Validation</h3>
             <p>
-              The sitemap page passed validation after minor issues with
-              unclosed SVG elements were corrected. Ensuring proper use of
-              <code>&lt;a&gt;</code> inside SVG enhanced both functionality and
-              compliance. The page now adheres to HTML5 standards.
+              The sitemap page passed validation with no critical errors. The
+              layout's use of semantic tags and structured content helped meet
+              accessibility and validation requirements.
             </p>
+            <p>
+              Note: The Prettier extension in VS Code automatically added
+              self-closing slashes (e.g.
+              <code>&lt;img /&gt;</code>) to void elements. While technically
+              valid according to HTML5 specifications, these self-closing tags
+              may trigger informational messages from the W3C validator.
+              However, they are left as-is, since they are valid HTML5 syntax.
+            </p>
+
             <img
-              src="validationSnapshots/validation_sitemap.png"
+              src="./assets/validationSnapshots_ST4/validation_sitemap.png"
               alt="Sitemap Page Validation Screenshot"
             />
 
@@ -147,15 +148,23 @@
           <section>
             <h2 id="contentVal">Content Page validation report</h2>
             <hr />
+            <h3>Validation</h3>
             <p>
-              The content page contained a few initial warnings, such as missing
-              <code>alt</code> attributes and improperly nested lists. These
-              were corrected, and the final result validated successfully. The
-              page is fully responsive and accessible, using semantic sectioning
-              and iframe best practices.
+              The content page passed validation with no critical errors. The
+              layout's use of semantic tags and structured content helped meet
+              accessibility and validation requirements.
             </p>
+            <p>
+              Note: The Prettier extension in VS Code automatically added
+              self-closing slashes (e.g.
+              <code>&lt;img /&gt;</code>) to void elements. While technically
+              valid according to HTML5 specifications, these self-closing tags
+              may trigger informational messages from the W3C validator.
+              However, they are left as-is, since they are valid HTML5 syntax.
+            </p>
+
             <img
-              src="validationSnapshots/validation_content.png"
+              src="./assets/validationSnapshots_ST4/validation_content.jpeg"
               alt="Content Page Validation Screenshot"
             />
 

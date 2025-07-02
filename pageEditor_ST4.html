@@ -65,7 +65,7 @@
     </header>
 
     <section class="content-h">
-      <h2>Kavinu Thepul, Student 04</h2>
+      <h2>Kavinu Thepul | Page Editor | Student 04</h2>
     </section>
 
     <div class="container">
@@ -73,30 +73,14 @@
         <h3>Core pages developed:</h3>
         <hr />
         <ul class="top-level-ul">
-          <li>Student 1</li>
-          <ul>
-            <li><a href="#">Splash page</a></li>
-            <li><a href="#">Volunteer page</a></li>
-            <li><a href="#">Content page</a></li>
-          </ul>
-          <li>Student 2</li>
-          <ul>
-            <li><a href="#">Home page </a></li>
-            <li><a href="#">Table page</a></li>
-            <li><a href="#">Content page</a></li>
-          </ul>
-          <li>Student 3</li>
-          <ul>
-            <li><a href="#">Feedback page</a></li>
-            <li><a href="#">Team page</a></li>
-            <li><a href="#">Content page</a></li>
-          </ul>
-          <li>Student 4</li>
-          <ul>
-            <li><a href="#profileVal">Profile page </a></li>
-            <li><a href="#sitemapVal">Sitemap page</a></li>
-            <li><a href="#contentVal">Content page</a></li>
-          </ul>
+          <li>
+            Student 4
+            <ul>
+              <li><a href="#profileVal">Profile page</a></li>
+              <li><a href="#sitemapVal">Sitemap page</a></li>
+              <li><a href="#contentVal">Content page</a></li>
+            </ul>
+          </li>
           <li><a href="#challenge">Challenges and Lessons Learned</a></li>
           <li><a href="#compliance">Compliance</a></li>
           <li><a href="#ref">References</a></li>
@@ -212,57 +196,60 @@
           <section>
             <h2 id="sitemap">Sitemap Page</h2>
             <hr />
-
             <h3>Technical Description</h3>
             <ul>
-              <li>HTML Structure:</li>
-              <ul>
-                <li>
-                  Uses semantic HTML elements like
-                  <code>&lt;section&gt;</code> and <code>&lt;main&gt;</code> for
-                  structure and readability.
-                </li>
-                <li>
-                  Interactive sitemap created using <code>&lt;svg&gt;</code>,
-                  <code>&lt;rect&gt;</code>, <code>&lt;text&gt;</code>, and
-                  <code>&lt;line&gt;</code> for scalable vector graphics.
-                </li>
-                <li>
-                  SVG elements are nested in <code>&lt;a&gt;</code> tags to
-                  enable clickable navigation.
-                </li>
-                <li>
-                  Separate SVG structures are used for desktop and mobile views
-                  with <code>.svg-desktop</code> and
-                  <code>.svg-mobile</code> classes.
-                </li>
-              </ul>
+              <li>
+                HTML Structure:
+                <ul>
+                  <li>
+                    Uses semantic HTML elements like
+                    <code>&lt;section&gt;</code> and
+                    <code>&lt;main&gt;</code> for structure and readability.
+                  </li>
+                  <li>
+                    Interactive sitemap created using <code>&lt;svg&gt;</code>,
+                    <code>&lt;rect&gt;</code>, <code>&lt;text&gt;</code>, and
+                    <code>&lt;line&gt;</code> for scalable vector graphics.
+                  </li>
+                  <li>
+                    SVG elements are nested in <code>&lt;a&gt;</code> tags to
+                    enable clickable navigation.
+                  </li>
+                  <li>
+                    Separate SVG structures are used for desktop and mobile
+                    views with <code>.svg-desktop</code> and
+                    <code>.svg-mobile</code> classes.
+                  </li>
+                </ul>
+              </li>
 
-              <li>CSS Techniques:</li>
-              <ul>
-                <li>
-                  SVG elements are styled using class selectors like
-                  <code>.rect1</code>, <code>.rect2</code>,
-                  <code>.rect3</code> to differentiate shape sizes.
-                </li>
-                <li>
-                  <code>fill</code>, <code>stroke</code>, and
-                  <code>transition</code> properties enhance interactivity with
-                  hover effects on rectangles.
-                </li>
-                <li>
-                  Text within SVGs styled via <code>svg text</code> selectors
-                  for font size and color control.
-                </li>
-                <li>
-                  <code>section</code> has max width/height and shows scrollbars
-                  on hover to keep layout clean initially.
-                </li>
-                <li>
-                  Responsiveness handled using media queries: below 600px, the
-                  desktop SVG is hidden and the mobile SVG is shown instead.
-                </li>
-              </ul>
+              <li>
+                CSS Techniques:
+                <ul>
+                  <li>
+                    SVG elements are styled using class selectors like
+                    <code>.rect1</code>, <code>.rect2</code>,
+                    <code>.rect3</code> to differentiate shape sizes.
+                  </li>
+                  <li>
+                    <code>fill</code>, <code>stroke</code>, and
+                    <code>transition</code> properties enhance interactivity
+                    with hover effects on rectangles.
+                  </li>
+                  <li>
+                    Text within SVGs styled via <code>svg text</code> selectors
+                    for font size and color control.
+                  </li>
+                  <li>
+                    <code>section</code> has max width/height and shows
+                    scrollbars on hover to keep layout clean initially.
+                  </li>
+                  <li>
+                    Responsiveness handled using media queries: below 600px, the
+                    desktop SVG is hidden and the mobile SVG is shown instead.
+                  </li>
+                </ul>
+              </li>
             </ul>
 
             <h3>Accessibility</h3>
@@ -296,58 +283,63 @@
             <hr />
             <h3>Technical Description</h3>
             <ul>
-              <li>HTML Structure:</li>
-              <ul>
-                <li>
-                  Uses semantic tags like <code>&lt;section&gt;</code>,
-                  <code>&lt;nav&gt;</code>, and <code>&lt;main&gt;</code> to
-                  structure content meaningfully.
-                </li>
-                <li>
-                  The sidebar uses a nested <code>&lt;ul&gt;</code> list with
-                  icons and anchor tags linking to specific
-                  <code>id</code>-based sections for smooth in-page navigation.
-                </li>
-                <li>
-                  Each section contains a heading, descriptive text, and
-                  relevant media (e.g. <code>&lt;img&gt;</code> and
-                  <code>&lt;iframe&gt;</code>).
-                </li>
-                <li>
-                  Embedded YouTube and interactive maps are included using
-                  <code>&lt;iframe&gt;</code> tags inside responsive wrappers.
-                </li>
-              </ul>
+              <li>
+                HTML Structure:
+                <ul>
+                  <li>
+                    Uses semantic tags like <code>&lt;section&gt;</code>,
+                    <code>&lt;nav&gt;</code>, and <code>&lt;main&gt;</code> to
+                    structure content meaningfully.
+                  </li>
+                  <li>
+                    The sidebar uses a nested <code>&lt;ul&gt;</code> list with
+                    icons and anchor tags linking to specific
+                    <code>id</code>-based sections for smooth in-page
+                    navigation.
+                  </li>
+                  <li>
+                    Each section contains a heading, descriptive text, and
+                    relevant media (e.g. <code>&lt;img&gt;</code> and
+                    <code>&lt;iframe&gt;</code>).
+                  </li>
+                  <li>
+                    Embedded YouTube and interactive maps are included using
+                    <code>&lt;iframe&gt;</code> tags inside responsive wrappers.
+                  </li>
+                </ul>
+              </li>
 
-              <li>CSS Styling:</li>
-              <ul>
-                <li>
-                  The page layout is split using a flex container in the
-                  <code>.container</code> class to position sidebar and content
-                  side-by-side.
-                </li>
-                <li>
-                  <code>.sidebar</code> is styled with padding, box-shadow, and
-                  hover transitions for a card-like UI with interactive
-                  navigation items.
-                </li>
-                <li>
-                  Section headings use distinct classes like
-                  <code>.content-h</code> and
-                  <code>.header-for-content</code> to control size and color
-                  (e.g. <span>green highlights</span>).
-                </li>
-                <li>
-                  Responsive design handled using media queries for screens
-                  under 768px and 600px. This hides sidebar text labels and
-                  adjusts padding/font sizes.
-                </li>
-                <li>
-                  <code>iframe</code> and <code>img</code> tags are styled for
-                  full width display, with <code>border-radius</code> and
-                  <code>box-shadow</code> for visual polish.
-                </li>
-              </ul>
+              <li>
+                CSS Styling:
+                <ul>
+                  <li>
+                    The page layout is split using a flex container in the
+                    <code>.container</code> class to position sidebar and
+                    content side-by-side.
+                  </li>
+                  <li>
+                    <code>.sidebar</code> is styled with padding, box-shadow,
+                    and hover transitions for a card-like UI with interactive
+                    navigation items.
+                  </li>
+                  <li>
+                    Section headings use distinct classes like
+                    <code>.content-h</code> and
+                    <code>.header-for-content</code> to control size and color
+                    (e.g. <span>green highlights</span>).
+                  </li>
+                  <li>
+                    Responsive design handled using media queries for screens
+                    under 768px and 600px. This hides sidebar text labels and
+                    adjusts padding/font sizes.
+                  </li>
+                  <li>
+                    <code>iframe</code> and <code>img</code> tags are styled for
+                    full width display, with <code>border-radius</code> and
+                    <code>box-shadow</code> for visual polish.
+                  </li>
+                </ul>
+              </li>
             </ul>
 
             <h3>Accessibility</h3>
@@ -455,9 +447,12 @@
             <div class="ref">
               <ul>
                 <li>
-                  Duckett, J. (2011)
-                  <i>HTML and CSS: Design and Build Websites</i>. Indianapolis:
-                  John Wiley & Sons.
+                  MDN Web Docs (2025) <i>HTML: HyperText Markup Language</i>.
+                  Available at:
+                  <a href="https://developer.mozilla.org/en-US/"
+                    >https://developer.mozilla.org/en-US/</a
+                  >
+                  (Accessed: 12 June 2025).
                 </li>
                 <li>
                   iStock (2025)
@@ -466,35 +461,21 @@
                   <a href="https://www.istockphoto.com/"
                     >https://www.istockphoto.com/</a
                   >
-                  (Accessed: 2 July 2025).
+                  (Accessed: 15 June 2025).
                 </li>
-                <li>
-                  MDN Web Docs (2025) <i>HTML: HyperText Markup Language</i>.
-                  Available at:
-                  <a href="https://developer.mozilla.org/en-US/"
-                    >https://developer.mozilla.org/en-US/</a
-                  >
-                  (Accessed: 2 July 2025).
-                </li>
+
                 <li>
                   NASA (2025) <i>Climate Change: Vital Signs of the Planet</i>.
                   Available at:
                   <a href="https://climate.nasa.gov/"
                     >https://climate.nasa.gov/</a
                   >
-                  (Accessed: 2 July 2025).
+                  (Accessed: 20 June 2025).
                 </li>
                 <li>
                   IPCC (2025) <i>Reports</i>. Available at:
                   <a href="https://www.ipcc.ch/">https://www.ipcc.ch/</a>
-                  (Accessed: 2 July 2025).
-                </li>
-                <li>
-                  W3C (2025) <i>Markup Validation Service</i>. Available at:
-                  <a href="https://validator.w3.org/"
-                    >https://validator.w3.org/</a
-                  >
-                  (Accessed: 2 July 2025).
+                  (Accessed: 20 June 2025).
                 </li>
                 <li>
                   W3Schools (2025)
@@ -504,7 +485,14 @@
                     href="https://www.w3schools.com/css/css_rwd_mediaqueries.asp"
                     >https://www.w3schools.com/css/css_rwd_mediaqueries.asp</a
                   >
-                  (Accessed: 2 July 2025).
+                  (Accessed: 24 June 2025).
+                </li>
+                <li>
+                  W3C (2025) <i>Markup Validation Service</i>. Available at:
+                  <a href="https://validator.w3.org/"
+                    >https://validator.w3.org/</a
+                  >
+                  (Accessed:2 July 2025).
                 </li>
               </ul>
             </div>

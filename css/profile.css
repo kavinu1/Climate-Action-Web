@@ -276,6 +276,14 @@ label {
   gap: 1rem;
 }
 
+.form-buttons button[type="submit"] {
+  background-color: #71cc75;
+}
+
+.form-buttons button[type="reset"] {
+  background-color: #6c757db9;
+}
+
 .form-buttons .main-button:hover {
   color: #555;
 }
