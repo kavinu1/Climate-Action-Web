@@ -1,11 +1,11 @@
 .container {
   display: flex;
   max-width: 1500px;
-  margin: 0 2rem;
+  margin: 0 6rem;
 }
 
 .content {
-  padding: 0 5px 0 20px;
+  padding: 0 2rem 0 3rem;
 }
 
 .content-h {
@@ -20,12 +20,17 @@
 }
 
 .content h2 {
-  color: #14cb5a;
-  margin-bottom: 0.5rem;
+  color: #2b2a2ae5;
 }
 
-.content h2 {
-  margin-bottom: 0.4rem;
+hr {
+  border: 1.2px solid #09b44b;
+  margin: 0.6rem 0 1.4rem;
+}
+
+.content h3 {
+  font-size: 1.2rem;
+  color: #09b44b;
 }
 
 aside {
@@ -38,7 +43,7 @@ aside {
 }
 
 aside ul {
-  padding: 1rem 1rem 0;
+  padding: 0 1rem;
 }
 
 aside ul li a {
@@ -70,4 +75,5 @@ aside ul ul li:hover {
 
 img {
   width: 90%;
+  margin: 0 auto 2rem;
 }
