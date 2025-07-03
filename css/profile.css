@@ -145,6 +145,72 @@ li {
   padding-left: 2rem;
 }
 
+.volunteering {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.volunteering article {
+  width: 320px;
+  margin: 1rem auto;
+  background-color: #f4fff9;
+  border: 2px solid #10a74ae5;
+  position: relative;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.volunteering article:hover {
+  transform: translateY(-5px);
+}
+
+.volunteering .program-image {
+  width: 100%;
+  height: 160px;
+  border-radius: 8px 8px 0 0;
+}
+
+.country-flag {
+  display: flex;
+}
+
+.country-flag img {
+  height: 20px;
+  margin-right: 0.8rem;
+}
+
+.volunteering .content {
+  padding: 0.5rem 1rem;
+}
+
+.volunteering .content h3 {
+  font-size: 18px;
+  color: #13a049;
+}
+
+.volunteering .form-buttons {
+  position: absolute;
+  bottom: 0.5rem;
+}
+
+.btn-1,
+.btn-2 {
+  font-size: 14px;
+  color: white;
+  padding: 0.3rem 1rem;
+  border-radius: 16px;
+}
+
+.btn-1 {
+  background-color: #5a5a5a;
+}
+
+.btn-2 {
+  background-color: #10a74a;
+}
+
 .volunteer-table {
   margin: 2rem auto;
   overflow-x: auto;
@@ -342,6 +408,11 @@ label {
 
   .content {
     font-size: 0.91rem;
+  }
+
+  .volunteering article {
+    width: 100%;
+    margin: 0 auto;
   }
 
   .volunteer-table {

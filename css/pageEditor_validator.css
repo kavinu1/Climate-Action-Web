@@ -78,7 +78,7 @@ aside ul ul li {
   border-radius: 8px;
   padding: 0.5rem;
   cursor: pointer;
-  transition: background 0.3s;
+  transition: background-color 0.3s;
 }
 
 aside ul ul li a {
@@ -104,20 +104,21 @@ aside ul ul li:hover {
   color: #4caf50;
 }
 
-.ref ul {
+#ref ul {
   margin: 0;
 }
 
-.ref li {
+#ref li {
+  margin-bottom: 1rem;
   list-style: none;
   color: #424040;
 }
 
-.ref li a {
+#ref li a {
   color: #4d4c4cd8;
 }
 
-.ref li a:hover {
+#ref li a:hover {
   color: #777777d8;
 }
 
