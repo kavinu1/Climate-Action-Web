@@ -134,6 +134,10 @@ iframe {
 }
 
 @media (max-width: 600px) {
+  section {
+    scroll-margin-top: 85px;
+  }
+
   .content {
     padding: 0 10px 0 20px;
   }
