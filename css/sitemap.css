@@ -3,26 +3,30 @@
   font-size: 30px;
 }
 
-section {
+section .block-content {
+  margin: 5% 8% 0;
+}
+
+section .site-map {
   max-height: 900px;
   max-width: 1300px;
-  margin: 2rem;
+  margin: 0 2% 2rem;
   overflow: hidden;
 }
 
-section:hover {
+section .site-map:hover {
   overflow: auto;
   scrollbar-width: thin;
 }
 
+/* Hide mobile SVG by default (desktop view) */
 .svg-mobile {
   display: none;
 }
 
+/* Styling for rectangles in the SVG site map */
 .site-map rect {
-  width: 80px;
-  height: 30px;
-  rx: 10;
+  rx: 10; /* rounded corners */
   fill: white;
   stroke: #77c052;
   stroke-width: 2;
@@ -39,34 +43,25 @@ section:hover {
   stroke-width: 2;
 }
 
+/* Styling for polylines (arrows) */
 .site-map polyline {
   fill: #4caf50;
 }
 
+/* Styling for text labels inside the SVG */
 .site-map svg text {
   font-size: 14px;
   fill: #2f7e4c;
-  pointer-events: none;
-}
-
-.site-map .rect1 {
-  width: 110px;
-}
-
-.site-map .rect2 {
-  width: 90px;
-}
-
-.site-map .rect3 {
-  height: 26px;
-  width: 75px;
+  pointer-events: none; /* text is not clickable */
 }
 
 .site-map .text2 {
   font-size: 12px;
 }
 
+/* Responsive Design */
 @media screen and (max-width: 600px) {
+  /* Show the mobile SVG and hide desktop SVG */
   .svg-mobile {
     display: block;
   }
@@ -79,14 +74,18 @@ section:hover {
     font-size: 20px;
   }
 
-  section {
-    margin: 1rem;
+  section .site-map {
+    margin: 0 1rem 1rem;
     height: 730px;
   }
 }
 
 @media screen and (max-width: 400px) {
-  section {
+  section.block-content {
+    margin: 2% 2% 0;
+  }
+
+  section .site-map {
     height: 585px;
   }
 }
